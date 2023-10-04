@@ -3,14 +3,14 @@ package HW8;
 import java.time.Instant;
 import java.util.Date;
 
-public class Product{
+public class Product {
 
     private final String type;
     private double price;
     private boolean haveDiscount;
     private final Date added;
 
-    public Product(String type, int price, boolean haveDiscount) {
+    public Product(String type, double price, boolean haveDiscount) {
         this.type = type;
         this.price = price;
         this.haveDiscount = haveDiscount;
