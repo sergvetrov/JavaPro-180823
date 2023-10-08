@@ -1,0 +1,12 @@
+Statistic of book - lorem
+33 -> sed
+24 -> tincidunt
+23 -> quis
+21 -> eget
+21 -> vel
+21 -> nulla
+20 -> ipsum
+19 -> lorem
+19 -> ligula
+19 -> dui
+total unique words = 205
