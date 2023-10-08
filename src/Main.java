@@ -1,11 +1,16 @@
+import HW10.BookParser;
 import HW9.ArrayDataException;
 import HW9.ArraySizeException;
 import HW9.ArrayValueCalculator;
 
+import java.io.IOException;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
-        doHW9();
+//        System.out.println("Hello world!");
+//        doHW9();
+        doHW10();
     }
 
     private static void doHW9() {
@@ -20,6 +25,18 @@ public class Main {
         } catch (ArrayDataException e) {
             System.out.println("Some element(s) is wrong, strings must have only numbers");
             System.out.println(e.getMessage());
+        }
+    }
+
+    private static void doHW10() {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Hello, enter the book name: ");
+        String bookName = in.next();
+
+        try {
+            BookParser.makeStatistic(bookName);
+        } catch (IOException e) {
+            System.out.println("Book not found");
         }
     }
 }
